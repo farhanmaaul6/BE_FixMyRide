@@ -7,10 +7,10 @@ const getPlacesNearbyHandler = async (request, h) => {
       latitude, longitude, radius, count
     } = request.payload;
 
-    //const apiKey = 'AIzaSyD-sMEjpOpZuAiaj6Xs6ip0KgUU8FjIDTQ';
+    //const apiKey = 'AIzaSyA4of3B5RUMkId9ZlFM7diWJyBJesuaUG4';
 
     const requestData = {
-      includedTypes: 'car_repair',
+      includedTypes: ['car_repair'], // Pastikan ini dalam bentuk array jika diperlukan
       maxResultCount: count,
       locationRestriction: {
         circle: {
